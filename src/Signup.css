@@ -1,0 +1,38 @@
+#mainSignupDiv input{
+    width: 200px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 20px;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#mainSignupDiv button{
+    width: 207px;
+    margin-top: 30px;
+    background-color: #307693;
+    border: 0px;
+    border-radius: 15px;
+    height: 30px;
+    color: white;
+}
+
+#mainSignupDiv img{
+    width: 30px;
+    transform: translateX(-10px);
+    transition: all 0.5s;
+}
+
+#imageInput{
+    display: none;
+}
+
+#image{
+    transform: translateX(50%) !important;
+    height: 100px;
+    width: 100px !important;
+    border-radius: 50%;
+}

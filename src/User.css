@@ -1,0 +1,25 @@
+/* User.css */
+#userPage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-details {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.user-details p {
+    margin: 10px 0;
+}
+
+.user-details strong {
+    color: #333;
+}
+
+iframe {
+    border: none;
+}
