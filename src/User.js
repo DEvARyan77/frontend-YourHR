@@ -84,7 +84,7 @@ function User() {
             <form onSubmit={handleSubmit}>
                 <p>Change Resume:</p>
                 <input type='file' accept='.pdf' id='resume'></input>
-                <button>Submit</button>
+                <button onClick={()=>{document.getElementById('submit').value="Submitting..."}} id='submit'>Submit</button>
             </form>
         </div>
     );
