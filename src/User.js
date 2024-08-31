@@ -8,6 +8,7 @@ function User() {
     const navigate = useNavigate();
     const [pdfUrl, setPdfUrl] = useState(null);
     const [userInfo, setUserInfo] = useState(null);
+    const [Submit, setSubmit] = useState("Submit");
 
     useEffect(() => {
         const checkLoginAndFetchPdf = async () => {
@@ -84,7 +85,7 @@ function User() {
             <form onSubmit={handleSubmit}>
                 <p>Change Resume:</p>
                 <input type='file' accept='.pdf' id='resume'></input>
-                <button onClick={()=>{document.getElementById('submit').value="Submitting..."}} id='submit'>Submit</button>
+                <button onClick={()=>{setSubmit("Submitting...")}} id='submit'>{Submit}</button>
             </form>
         </div>
     );
