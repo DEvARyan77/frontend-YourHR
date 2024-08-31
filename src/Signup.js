@@ -26,7 +26,9 @@ function Signup({move}){
             if(resume){
                 const formData = new FormData()
                 formData.append('file',resume)
+                console.log(resume)
                 formData.append('username',username)
+                console.log(username)
                 axios.post('https://backend-your-hr.vercel.app/upload',formData).catch((err)=>{
                     console.log(err)
                 })

@@ -43,7 +43,10 @@ function User() {
             const formData = new FormData()
             formData.append('file',resume)
             formData.append('username',userInfo?.username)
-            axios.post('https://backend-your-hr.vercel.app/upload',formData).catch((err)=>{
+            console.log(resume)
+            axios.post('https://backend-your-hr.vercel.app/upload',formData).then((result)=>{
+                console.log(result.data)
+            }).catch((err)=>{
                 console.log(err)
             })
         }
