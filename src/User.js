@@ -36,7 +36,7 @@ function User() {
         checkLoginAndFetchPdf();
     }, [navigate]);
 
-    function handleSubmit(e){
+    async function handleSubmit(e){
         e.preventDefault()
         const resume = document.getElementById('resume').files[0]
         if(resume){
@@ -44,7 +44,7 @@ function User() {
             formData.append('file',resume)
             formData.append('username',userInfo?.username)
             console.log(resume)
-            axios.post('https://backend-your-hr.vercel.app/upload',formData).then((result)=>{
+            await axios.post('https://backend-your-hr.vercel.app/upload',formData).then((result)=>{
                 console.log(result.data)
             }).catch((err)=>{
                 console.log(err)
